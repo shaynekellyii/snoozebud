@@ -10,7 +10,8 @@ void setup(){
 // pinMode(led2,OUTPUT); 
 // pinMode(led3,OUTPUT); 
 // pinMode(led4,OUTPUT); 
- pinMode(pote,INPUT); 
+ pinMode(pote,INPUT);
+ pinMode(motor,OUTPUT); 
 
 } 
 
