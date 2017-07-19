@@ -1,6 +1,7 @@
 int sensoroutput = 3; // the analog pin connected to the sensor
-int ledoutput = 0; // pin connected to LED
+int ledoutput = 5; // pin connected to LED
 int buzzeroutput = 2; // pin connected to buzzer
+int vibePin = 5;
 int PIEZO_THRESHOLD = 30;
 int DELAY_MS = 10000;
 int ledCount = 0;
@@ -30,6 +31,7 @@ void loop() {
     digitalWrite(ledoutput, HIGH);
     ledCount++;
     turnOnBuzzerIfNeeded();
+    analogWrite(vibePin, 255);
   } 
 }
 
